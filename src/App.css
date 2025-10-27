@@ -1,0 +1,64 @@
+/* Sidebar alineado con el header */
+.custom-sidebar {
+  top: 56px !important; /* empieza justo debajo del header */
+  height: calc(100vh - 56px);
+}
+
+/* Alinear el navbar con el sidebar */
+header.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px; /* altura estándar CoreUI */
+  z-index: 1040;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* Ajustar el contenedor principal para que no quede debajo del header */
+.main-content {
+  padding-top: 56px; /* igual a la altura del header */
+}
+
+.row{
+  text-transform:capitalize;
+}
+
+/*Color Warning*/
+#btnVerTurnos{
+  background: linear-gradient(90deg, #f1f74a 100%);
+  border:none;
+  color: black;
+}
+#btnVerTurnos:hover{
+  color:white;
+  background: #ffcc00;
+  border-radius: 12px;
+}
+
+/*Color Primary*/
+#btnTurnos{
+  background: linear-gradient(90deg, #8768f7b2 100%);
+  border:none;
+  color: black;
+}
+#btnTurnos:hover{
+  border-radius: 12px;
+  background: #5856d6;
+  color: white;
+}
+
+/*Color verde*/
+#btnVerde{
+  background: linear-gradient(90deg, #50e98a 100%);
+  border:none;
+  color: black;
+}
+#btnVerde:hover{
+  border-radius: 12px;
+  background: #339900;
+  color: white;
+}

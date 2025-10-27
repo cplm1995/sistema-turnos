@@ -1,0 +1,38 @@
+.teclado {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tecla {
+  background-color: #4a5ef5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  height: 80px;
+  width: 100px;
+  transition: all 0.2s ease;
+}
+
+.tecla:hover {
+  background-color: #3345d0;
+  transform: scale(1.05);
+}
+
+.borrar {
+  background-color: #e74c3c;
+}
+
+.enviar {
+  background-color: #27ae60;
+  grid-column: span 2;
+}
+
+.mensaje {
+  color: #555;
+  font-style: italic;
+  margin-top: 25px;
+}
