@@ -35,9 +35,9 @@ const Sidebar = ({ visible, setVisible }) => {
       onVisibleChange={(v) => {
         if (v !== visible) setVisible(v);
       }}
-      className="mt-4"
+      className="mt-3"
       unfoldable={false}
-      position="fixed"
+      position="absolute"
       style={visible ? openStyle : closedStyle}
     >
       <CSidebarNav>
